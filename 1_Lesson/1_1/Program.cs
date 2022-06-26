@@ -5,9 +5,9 @@ int num2 = int.Parse(Console.ReadLine());
 
 if (num1 * num1 == num2)
 {
-    Console.WriteLine("Число 1 является квадратом 2 числа ");
+    Console.WriteLine(" Да ");
 }
 else
 {
-    Console.WriteLine("Число 1  НЕ является квадратом 2 числа ");
+    Console.WriteLine(" Нет ");
 }
