@@ -4,21 +4,21 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-void FindLast(int num1 )
+void FindLast(int num1)
 {
     int num = num1;
     if (num > 99)
-{
-    while (num>=1000)
     {
-        num = num / 10;
-    }
-    int cont = num % 10;
-    Console.WriteLine($"{num1} -> {cont % 10}");
+        while (num >= 1000)
+        {
+            num = num / 10;
+        }
+        int cont = num % 10;
+        Console.WriteLine($"{num1} -> {cont % 10}");
 
-}
-else
-Console.WriteLine($"{num1} -> третьей цифры нет");
+    }
+    else
+        Console.WriteLine($"{num1} -> третьей цифры нет");
 }
 
 Console.Write("Введите значение: ");

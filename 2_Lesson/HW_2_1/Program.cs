@@ -4,16 +4,16 @@
 // 782 -> 8
 // 918 -> 1
 
-void FindAverage(int num )
+void FindAverage(int num)
 {
     if (num >= 100 && num < 1000)
-{
-    int cont = num / 10;
-    Console.WriteLine($"{num} -> {cont % 10}");
+    {
+        int cont = num / 10;
+        Console.WriteLine($"{num} -> {cont % 10}");
 
-}
-else
-Console.WriteLine("False");
+    }
+    else
+        Console.WriteLine("False");
 }
 
 Console.Write("Введите трехзначное число: ");
