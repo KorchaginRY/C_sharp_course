@@ -18,3 +18,28 @@ void Poly(int num)
 Poly(14212);
 Poly(12821);
 Poly(23432);
+Console.WriteLine("---------Способ №2 через string----------------------");
+// -------------------------------------------------------------------
+
+void Polindrom(int n)
+{
+    int i = 0;
+    string num = n.ToString();
+    int size = num.Length - 1;
+    string flag = "Yes";
+    while (i < size / 2)
+    {
+        if (num[i] != num[size-i])
+        {
+            flag = "No";
+            break;
+        }
+        i++;
+    }
+    Console.WriteLine($"{n} -> {flag}");
+}
+
+Polindrom(1234321);
+Polindrom(1234567);
+Polindrom(141);
+Polindrom(4224);
