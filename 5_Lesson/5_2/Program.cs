@@ -30,6 +30,7 @@ void CheckNum(int[] arr, int n)
         if(arr[i] == n)
         {
             flag = "Yes";
+            break;
         }
     }
     Console.WriteLine($"{n} -> {flag}");
