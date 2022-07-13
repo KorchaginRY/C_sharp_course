@@ -22,7 +22,7 @@ int[] MassNums(int size)
 
     for (int i = 0; i < size; i++)
     {
-        arr[i] = new Random().Next(1, 5);
+        arr[i] = new Random().Next(1, 10);
     }
     return arr;
 }
