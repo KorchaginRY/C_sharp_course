@@ -1,0 +1,45 @@
+﻿// 3. Задайте двумерный массив. Найдите сумму элементов главной диагонали.
+
+void PrintMas(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write($"{array[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+int[,] FillMas(int row, int column)
+{
+    int[,] arr = new int[row, column];
+    for (int j = 0; j < row; j++)
+    {
+        for (int i = 0; i < column; i++)
+        {
+            arr[j, i] = new Random().Next(1, 15);
+        }
+    }
+    return arr;
+}
+
+int SumDiag(int[,] arr)
+{
+    int rows = arr.GetLength(0);
+    int sum = 0;
+    for (int i = 0; i < rows; i++)
+    {
+        sum += arr[i, i];
+    }
+    return sum;
+}
+Console.Write("Enter the number of rows: ");
+int row = int.Parse(Console.ReadLine());
+Console.Write("Enter the number of columns: ");
+int column = int.Parse(Console.ReadLine());
+int[,] arr_1 = FillMas(row, column);
+PrintMas(arr_1);
+Console.WriteLine($"Sum = {SumDiag(arr_1)}");
