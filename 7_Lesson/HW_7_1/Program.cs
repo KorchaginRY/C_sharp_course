@@ -7,7 +7,7 @@ void PrintMas(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j]} ");
+            Console.Write($"{array[i, j],6} ");
         }
         Console.WriteLine();
     }
@@ -22,7 +22,7 @@ double[,] FillMas(int row, int column)
     {
         for (int i = 0; i < column; i++)
         {
-            arr[j, i] = Math.Round(r.NextDouble() * 10 , 2);
+            arr[j, i] = Math.Round(r.NextDouble() * (10 + 10) - 10, 2);
         }
     }
     return arr;
