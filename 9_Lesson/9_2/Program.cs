@@ -6,7 +6,7 @@
 void ValuesSet(int M, int N)
 {
     if (N < M) return;
-    ValuesSet(M , N-1);
+    ValuesSet(M, N - 1);
     Console.Write($"{N}, ");
 
 }
